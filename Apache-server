@@ -1,7 +1,6 @@
 Chef-(Apache installation & configure by cookbook)
 
 
-
 enter into the cookbook:-
 
 step-1 chef generate cookbook apache-cookbook
@@ -27,8 +26,7 @@ step-10 copy server ip paste in browser check you content
 
 
 
-
-**********************************************************End**************************************************************
+*************************************************End**************************************************************
 
 
 
