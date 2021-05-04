@@ -1,0 +1,67 @@
+Chef-(Apache installation & configure by cookbook)
+
+
+
+enter into the cookbook:-
+
+step-1 chef generate cookbook apache-cookbook
+
+step-2 cd apache-cookbook
+
+step-3 chef generate recipe apache-recipe
+
+step-4 tree
+
+step-5 cd.. 
+
+step-6 vi apache-cookbook/recipes/apache-recipe.rb
+
+step-7 paste apache recipe code
+
+step-8 chef exec ruby -c apache-cookbook/recipes/apache-recipe.rb
+
+step-9 chef-client -zr "recipe[apache-cookbok::apache-recipe]"
+
+step-10 copy server ip paste in browser check you content
+
+
+
+
+
+**********************************************************End**************************************************************
+
+
+
+file '/myfile' do
+content 'Welcome to Technical Guftgu'
+action :create
+end
+
+*********
+
+
+package 'tree' do
+action :install
+end
+
+file '/myfile2' do
+content 'This is My Second Project code'
+action :create
+owner 'root'
+group 'root'
+end
+
+*********
+package 'httpd' do
+action :install
+end
+
+file '/var/www/html/index.html' do
+content 'Welcome to Technical Guftgu'
+action :create
+end
+
+
+service 'httpd' do
+action [:enable, :start]
+end
