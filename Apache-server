@@ -19,7 +19,7 @@ step-7 paste apache recipe code
 
 step-8 chef exec ruby -c apache-cookbook/recipes/apache-recipe.rb
 
-step-9 chef-client -zr "recipe[apache-cookbok::apache-recipe]"
+step-9 chef-client -zr "recipe[apache-cookbook::apache-recipe]"
 
 step-10 copy server ip paste in browser check you content
 
